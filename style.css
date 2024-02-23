@@ -1,0 +1,84 @@
+*{
+    padding:0;
+    margin:0;
+    border: box-border;
+    font-family: arial;
+}
+body{
+    margin-top: 50px;
+    text-align: center;
+    background-color: #DEF6CA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#box{
+    height: 600px;
+    width: 90%;
+    background-color: #F8BDC4;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 2rem;
+    font-weight: 550;
+    color: #DEF6CA;
+}
+#quote, #author, #catgeroy{
+    background-color: #F497DA;
+    height: 100%;
+    width: 80%;
+    align-self: center;
+    margin: 10px 0 20px 0;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: #F65BE3;
+    color:#DEF6CA;
+    font-size: 1.3rem;
+    font-weight: bold;
+    height: 50px;
+    width: 100px;
+    border:none;
+    border-radius: 50%;
+    margin:0 0 30px 0;
+}
+#last-sec{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+button:active{
+    background-color: #F497DA;
+    color:#627652;
+    cursor: pointer;
+    
+}
+button:hover{
+    
+    color:#000000;
+    cursor: pointer;
+    
+}
+.fa-volume-high{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    height: 35px;
+    width: 50px;
+    border-radius: 50%;
+    border:#F8BDC4 solid 2px;
+}
+.fa-volume-high:hover{
+    cursor: pointer;
+}
+.fa-volume-high:active{
+    border:#000000 solid 2px;
+    background-color: #F65BE3;
+}
