@@ -1,3 +1,4 @@
+
 const URL="https://api.quotable.io/random";
 let quoteArea=$(".quote");
 let quoteAuthor=$(".author");
@@ -5,6 +6,8 @@ let quoteCat=$(".catgeroy");
 async function generateQuote(){
     let api= await fetch(URL);
     let data=await api.json();
+    const audio = new Audio("./assets/notification.mp3");
+    audio.play();
     //console.log(data);
     quoteArea.text(data.content);
     quoteAuthor.text(data.author);
